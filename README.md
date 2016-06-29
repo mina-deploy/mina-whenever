@@ -1,6 +1,6 @@
 # Mina::Whenever
 
-This is a whenever plugin for (mina)[https://github.com/mina-deploy/mina]
+This is a whenever plugin for [mina](https://github.com/mina-deploy/mina)
 
 ## Installation
 
