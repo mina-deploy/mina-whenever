@@ -7,7 +7,7 @@ namespace :whenever do
   # Specify these in your deploy.rb as key/value pairs, for example:
   #     set :whenever_sets, host: ENV['HOST']
 
-  sets = lambda { whenever_sets || {} }
+  sets = lambda { fetch(:whenever_sets) || {} }
 
   set_string = lambda do
     ["environment=#{fetch(:rails_env)}",
