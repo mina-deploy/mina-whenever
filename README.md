@@ -38,6 +38,12 @@ in `deploy.rb`
 These are the settings you can set:
 
     set :whenever_name # default: "#{domain}_#{rails_env}"
+    
+You can also pass arbitrary key / value pairs to Whenever for use in the `schedule.rb` file via `whenever_sets`.
+
+    set :whenever_sets, our_host: ENV['HOST']                      
+
+In this way you can access the value via the `@our_host` variable in `schedule.rb`.
 
 ## Contributing
 
