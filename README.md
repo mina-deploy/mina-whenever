@@ -39,6 +39,10 @@ These are the settings you can set:
 
     set :whenever_name # default: "#{domain}_#{rails_env}"
 
+    # See https://github.com/javan/whenever#define-your-own-job-types for environment variable configuration
+    set :whenever_environment_variable # default: fetch(:environment_variable) || 'RAILS_ENV'
+    set :whenever_environment # default: fetch(fetch(:whenever_environment_variable).downcase.to_sym)
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mina-deploy/mina-whenever. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
